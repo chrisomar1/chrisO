@@ -1,1 +1,97 @@
 ijjvonxcjovndfjonvjfdonvujodf
+
+ChristianOmar@Christian MINGW64 ~
+$ pwd
+/c/Users/ChristianOmar
+
+ChristianOmar@Christian MINGW64 ~
+$ cd repositorio
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git config --global user.name "chrisomar1"
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git config --global user.email chrisomar_093@hotmail.com
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git add .
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git commit -m "Añadi un archivo de texto"
+[master (root-commit) fbe20b2] Añadi un archivo de texto
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Mi_primer_repositorio.txt
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git push --set-upstream origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git remote add origin https://github.com/chrisomar1/chrisO.git
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git push --set-upstream origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 271 bytes | 67.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/chrisomar1/chrisO.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git add .
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git commit -m "Añadi un nuevo archivo de texto"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ git push
+Everything up-to-date
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$ ^C
+
+ChristianOmar@Christian MINGW64 ~/repositorio (master)
+$
