@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.serializejson.js"></script>
+        <title>Mi primer blog</title>
+        
+    </head>
+    <body>
+        <div>
+            <form id="myform" action="" method="post">
+                <input type="text" name="nombre" required="true" br>
+                <button id="boton" onclick="serializar()" >Click</button>
+            </form>
+
+            <script>
+                function serializar()
+                {
+                    
+                        var text = "";
+                        text = $('#myform').serializeJSON();
+                        if(text.nombre==""||text.telefono)
+                        console.log(text);
+                        alert(text.nombre);                    
+                }
+            </script>
+        </div>
+    </body>
+</html>

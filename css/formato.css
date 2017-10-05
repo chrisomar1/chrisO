@@ -1,0 +1,22 @@
+h4{
+    
+    border-bottom: 3px solid red;
+    padding-bottom: 3px;
+    color: white;
+}
+
+h1{
+    color: #A0C3F8;
+}
+
+.myH1{
+    color: #A0C3F8;
+}
+
+#myH1{
+    color: #A0C3F8;
+}
+
+body{
+    background-color: #5f5f5f;
+}
