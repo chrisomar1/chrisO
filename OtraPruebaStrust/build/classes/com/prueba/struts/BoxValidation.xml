@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<validators>
+	<field name="email">
+		<field-validator type="required">
+			<message>The name is required</message>
+		</field-validator>
+	</field>
+</validators>

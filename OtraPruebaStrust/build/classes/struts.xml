@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+ 	<package name="default" extends="struts-default" namespace="/">
+ 	<!-- Mapear cada clase con un resultado y un redirect -->
+ 		<action name="getPrueba" class="com.prueba.struts.PruebaAction">
+ 			<!-- Este interceptor se supone cacha cuando se inicia mi app -->
+ 			<interceptor-ref name="params" />
+ 			<interceptor-ref name="timer" />
+ 			<result name="success">PruebaView.jsp</result>
+ 			<result name="error">Error.jsp</result>
+ 		</action>
+ 		<!-- Este Action tiene una caja de texto y captura una cadena que valida el valor,
+ 			 si está incorrecto redirecciona a un Error, caso contrario te lleva a un
+ 			 success, en ambos casos te muestra el valor de la cadena ingresada.
+ 		 -->
+ 		<action name="getHelloWorld" class="com.prueba.struts.HelloWorldAction">
+ 
+ 			<result name="success">HelloWorld.jsp</result>
+ 			<result name="error">Error2.jsp</result>
+ 		</action>
+ 		
+ 		
+ 		
+	</package>
+</struts>
