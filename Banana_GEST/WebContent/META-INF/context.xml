@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<Context path="/banana_gest">
+		<Resource name="jdbc/banana_gest" auth="Container"
+		type="javax.sql.DataSource" username="root" password="christiancogr93"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/banana_gest"
+		maxActive="10" maxIdle="4"
+		/>
+	</Context>
