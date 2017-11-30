@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 29/11/2017 10:26:09 AM by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="sandia" dynamic-insert="false" dynamic-update="false" mutable="true" name="SanPosts" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="san_posts">
+        <id name="pstId" type="java.lang.Long">
+            <column name="pst_id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="pstContent" optimistic-lock="true" type="string" unique="false">
+            <column length="65535" name="pst_content" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="pstControl" optimistic-lock="true" type="int" unique="false">
+            <column name="pst_control" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
