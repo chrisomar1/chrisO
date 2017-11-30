@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
+    <!-- Mi primer Bean a base de POJO -->
+    <bean id="emp1" class="com.grupo4.springdemo.Employee" init-method="myInit" destroy-method="myDestroy">
+        <property name="eId" value="102" />
+        <property name="eName" value="Squidward Tentacles" />
+        <property name="eAddress" value="Next to Sponge" />
+    </bean>
+    
+    <!-- Mi segundo Bean a base de POJO -->
+    <bean id="emp2" class="com.grupo4.springdemo.Employee" init-method="myInit" destroy-method="myDestroy">
+        <property name="eId" value="103" />
+        <property name="eName" value="Mr. Eugene Crabs" />
+        <property name="eAddress" value="Fancy place at Bikini Bottom" />
+    </bean>
+    
+    <!-- Mi tercer Bean a base de POJO -->
+    <bean id="emp3" class="com.grupo4.springdemo.Employee" init-method="myInit" destroy-method="myDestroy">
+        <property name="eId" value="104" />
+        <property name="eName" value="CHRISTIAN OMAR GONZALEZ RIVERA" />
+        <property name="eAddress" value="Smells Like Teen Spirit" />
+    </bean>
+</beans>
